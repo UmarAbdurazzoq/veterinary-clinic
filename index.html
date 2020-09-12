@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veterinary clinic</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -112,8 +113,10 @@
           <img src="img/osmotor-photo.png" alt="cat" width="524" height="329">
           <div class="slider-info__details">
             <h3>Первичный осмотр</h3>
-            <p>По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
-            <p>По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+            <p>По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет
+              экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+            <p>По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет
+              экономить Ваше время. Вы имеете возможность оставить у нас.</p>
             <a class="button btn-y" href="price.html">Узнать цену</a>
             <a class="button btn-b" href="appainment.html">Записаться на приём</a>
           </div>
@@ -125,15 +128,46 @@
 
   <div class="container">
     <section class="email">
-    <div class="email-input">
-      <h3 class="visually-hidden">email</h3>
-      <form class="email-input" action="https://echo.htmlacademy.ru" method="POST">
-        <input placeholder="Укажите Ваш email адрес" type="email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
-        <button class="button btn-p" type="submit">Подписаться</button>
+      <div class="email-input">
+        <h3 class="visually-hidden">email</h3>
+        <form class="email-input" action="https://echo.htmlacademy.ru" method="POST">
+          <input placeholder="Укажите Ваш email адрес" type="email"
+            pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
+          <button class="button btn-p" type="submit">Подписаться</button>
         </form>
-    </div>
-  </section>
-    </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container footer-pages">
+      <a href="logo-link"><img src="img/logo-of-page.svg" alt="logo"> </a>
+      <ul class="navbar__list footer-page">
+        <li class="navbar__item"><a class="navbar__link" href="#">Главная</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="#">О Клинике</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="#">Наши Услуги</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="#">Полезные Статьи</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="#">FAQ</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="#">Контакты</a></li>
+      </ul>
+
+      <div class="info-page footer-page">
+        <div class="work-day">
+          <p class="work-day__item"><b>Пн - Пт</b> 8:00 - 18:00</p>
+          <p class="work-day__item"><b>Сб - Вс</b> 8:00 - 14:00</p>
+        </div>
+
+        <address class="address-veterinary">г. Мариуполь, проспект Победы, 48а</address>
+
+        <ul class="phone-list">
+          <li class="phone__item"><a class="phone__link" href="tel:+0676347574">(067) 634 -75 - 74</a></li>
+          <li class="phone__item"><a class="phone__link" href="tel:+0637570131">(0637) 57 - 01 - 31</a></li>
+          <li class="phone__item"><a class="phone__link" href="tel:+0982664389">(098) 266 - 43 - 89</a></li>
+        </ul>
+
+      </div>
+      </div>
+  </footer>
 
 </body>
 
