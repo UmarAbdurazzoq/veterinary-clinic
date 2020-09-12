@@ -47,11 +47,11 @@ html {
 }
 
 body {
+    background-image: url("../img/bg.png");
     margin: 0;
     padding: 0;
     font-family: 'Futura PT', 'Arial', sans-serif;
     background-color: #E5E5E5;
-    ;
 }
 
 .visually-hidden {
@@ -417,7 +417,7 @@ body {
     color: #333333;
 }
 
-.blockquote-section blockquote::before{
+.blockquote-section blockquote::before {
     position: absolute;
     display: inline-block;
     width: 84px;
@@ -431,7 +431,8 @@ body {
     top: 0;
     content: "";
 }
-.blockquote-section blockquote::after{
+
+.blockquote-section blockquote::after {
     position: absolute;
     display: inline-block;
     width: 84px;
@@ -444,4 +445,296 @@ body {
     right: -110px;
     bottom: 0;
     content: "";
+}
+
+.our-services__heading {
+    width: 296px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 20px;
+    margin-top: 190px;
+    color: #333333;
+}
+
+.our-services__list {
+    max-width: 1310px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.our-services__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #333333;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 30px;
+    width: 193px;
+    min-height: 250px;
+}
+
+.our-services__list li:not(:first-child) {
+    margin-left: 15px;
+    margin-bottom: 14px;
+}
+
+.active_li::after {
+    content: '';
+    display: inline-block;
+    width: 193px;
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    right: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    transform: translateY(80%);
+}
+.our-services__item:hover{
+    color: #FFBD54;
+}
+.our-services__item:active{
+    opacity: 0.5;
+}
+.our-services__item::before {
+    display: inline-block;
+    width: 78px;
+    height: 78px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 25px;
+    content: "";
+}
+
+.s1::before {
+    background-image: url("../img/doctor\ 1.png");
+}
+
+.s2::before {
+    background-image: url("../img/doctor\ 2.png");
+}
+
+.s3::before {
+    background-image: url("../img/hirurg.png");
+}
+
+.s4::before {
+    background-image: url("../img/dermatolog.png");
+}
+
+.s5::before {
+    background-image: url("../img/veterinary-3\ 1.png");
+}
+
+.s6::before {
+    background-image: url("../img/oftamtalog.png");
+}
+
+.s7::before {
+    background-image: url("../img/diagnos.png");
+}
+
+.s8::before {
+    background-image: url("../img/shpirist.png");
+}
+
+.s9::before {
+    background-image: url("../img/pasport.png");
+}
+
+.s10::before {
+    background-image: url("../img/vaksina.png");
+}
+
+.s11::before {
+    background-image: url("../img/stamatalog.png");
+}
+
+.s12::before {
+    background-image: url("../img/case.png");
+}
+
+.slider-box {
+    width: 1310px;
+    position: relative;
+    padding: 0 40px;
+    margin-top: 150px;
+}
+
+.slider__controller {
+    border: none;
+    background-color: #E5E5E5;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left {
+    left: -1%;
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.right {
+    right: -1%;
+}
+
+.slider__controller:hover {
+    background-color: #fff;
+}
+
+.slider__controller:active {
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.slider-info {
+    margin: 0 40px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-info__details {
+    margin-left: 67px;
+}
+
+.slider-info__details h3 {
+    width: 333px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+
+.slider-info__details p {
+    width: 492px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.btn-y {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 15px 35px;
+    background: #FFBD54;
+    border-radius: 3px;
+    margin-right: 21px;
+}
+
+.btn-b {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 15px 35px;
+    background: #333333;
+    border-radius: 3px
+}
+
+.btn-b:hover{
+    background-color: #FFBD54;
+    color: #333333;
+}
+.btn-y:hover{
+    background-color: #333333;
+    color: #FFBD543;
+}
+.btn-p:hover{
+    background-color: #FFBD54;
+    color: #333333;
+}
+.btn-b:active,
+.btn-y:active,
+.btn-p:active{
+    opacity: 0.5;
+}
+
+.btn-y:before {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/money\ 1.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -5px;
+    margin-right: 12px;
+    content: "";
+}
+
+.btn-b:before {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/document\ 1.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -5px;
+    margin-right: 12px;
+    content: "";
+}
+
+.email {
+    height: 481px;
+    background-image: url("../img/kuchuk.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.email-input input {
+    width: 335px;
+    height: 50px;
+    margin-right: 21px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 5px;
+    color: #949494;
+
+}
+
+.email-input {
+    width: 544px;
+    height: 60px;
+    display: flex;
+    margin-top: 105px;
+}
+
+.btn-p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #333333;
+    border-radius: 3px;
 }
