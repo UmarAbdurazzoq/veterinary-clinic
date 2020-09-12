@@ -1,38 +1,37 @@
-
 @font-face {
-  font-family: "Futura PT";
-  src: url("fonts/FuturaPT-Book.woff2") format("woff2"),
-      url("fonts/FuturaPT-Book.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
+        url("../fonts/FuturaPT-Book.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Futura PT";
-  src: url("fonts/FuturaPT-Bold.woff2") format("woff2"),
-      url("fonts/FuturaPT-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+        url("../fonts/FuturaPT-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Futura PT";
-  src: url("fonts/FuturaPT-Light.woff2") format("woff2"),
-      url("fonts/FuturaPT-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+        url("../fonts/FuturaPT-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: "Futura PT";
-  src: url("fonts/FuturaPT-Medium.woff2") format("woff2"),
-      url("fonts/FuturaPT-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+        url("../fonts/FuturaPT-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -51,6 +50,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Futura PT', 'Arial', sans-serif;
+    background-color: #E5E5E5;
+    ;
 }
 
 .visually-hidden {
@@ -65,8 +66,236 @@ body {
 }
 
 .container {
-    max-width: 1148px;
-    padding: 0 24px;
+    max-width: 1350px;
+    padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.info-page {
+    display: flex;
+    padding-left: 178px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 9px 0;
+}
+
+.address-veterinary {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+}
+
+.address-veterinary::before {
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background-image: url("../img/home.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 9px;
+    content: "";
+}
+
+.phone-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.phone__link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.phone__link:hover {
+    color: #FFBD54;
+}
+
+.phone__link:active {
+    color: #333333;
+    opacity: 0.5;
+}
+
+.phone__item {
+    display: flex;
+    align-items: center;
+}
+
+.phone__item:nth-child(1)::before {
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background-image: url("../img/phone.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 9px;
+    margin-left: 9px;
+    content: "";
+}
+
+.phone__item:not(:first-child)::before {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 9px;
+    margin-left: 9px;
+    content: "";
+    background-color: #FFBD54;
+    border-radius: 50%;
+}
+
+.work-day {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+}
+
+.work-day__item {
+    margin: 0;
+    padding: 0;
+    padding-right: 23px;
+}
+
+.work-day__item:nth-child(1) {
+    margin-right: 17px;
+}
+
+.work-day::before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/calender.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 7px;
+    content: "";
+}
+
+.menu {
+    background-color: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    padding-left: 178px;
+}
+
+.navbar__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.logo-link {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: opacity 0.3s ease;
+    transform: translateY(-50%);
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.logo-link:active {
+    opacity: 0.5;
+}
+
+.navbar__link {
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+    padding: 20px 23px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar__link:hover {
+    background-color: #FFBD54;
+}
+
+.navbar__link:active {
+    background-color: rgba(255, 189, 84, 0.5);
+}
+
+.navbar__link--active {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__link--active::before {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/active.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 12px;
+    content: "";
+}
+
+.nabar__question {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    color: #333333;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 20px 23px;
+}
+
+.nabar__question:hover {
+    color: #fff;
+    background-color: #333333;
+}
+
+.nabar__question:active {
+    color: #fff;
+    background-color: #333333;
+    opacity: 0.5;
+}
+
+.nabar__question::before {
+    display: inline-block;
+    width: 23px;
+    height: 20px;
+    background-image: url("../img/pet.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-left: 10px;
+    content: "";
 }
