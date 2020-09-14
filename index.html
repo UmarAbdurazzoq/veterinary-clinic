@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veterinary clinic</title>
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
 </head>
 
 <body>
@@ -132,14 +132,72 @@
         <h3 class="visually-hidden">email</h3>
         <form class="email-input" action="https://echo.htmlacademy.ru" method="POST">
           <input placeholder="Укажите Ваш email адрес" type="email"
-            pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
+            pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required name="e-mail">
           <button class="button btn-p" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
   </div>
 
-  <footer>
+  <section class="article-section">
+    <div class="container">
+      <article>
+        <h2 class="article__heading">Полезные статьи</h2>
+
+        <ul class="article__list">
+          <li class="articl__item article1">
+            <span>28.08.2020</span>
+            <h3>Ультразвуковая чистка зубов</h3>
+            <p>Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...
+            </p>
+            <a class="nabar__question article__link" href="more.html">Читать больше</a>
+          </li>
+          
+          <li class="articl__item article2">
+            <span>29.08.2020</span>
+            <h3>Перед тем как завести собаку</h3>
+            <p>Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.
+            </p>
+            <a class="nabar__question article__link" href="more.html">Читать больше</a>
+          </li>
+          <li class="articl__item article3">
+            <span>21.07.2020</span>
+            <h3>Когда привавать питомца?</h3>
+            <p>Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...
+            </p>
+            <a class="nabar__question article__link" href="more.html">Читать больше</a>
+          </li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container form-wrapper">
+      <a
+        href="https://yandex.uz/maps/10335/tashkent/?ll=69.215939%2C41.347106&mode=search&oid=203287967764&ol=biz&z=18.14"><img
+          src="img/map-link.png" alt="maps-photo" width="462" height="652"></a>
+
+      <div class="form__page">
+        <h2 class="form__heading">Обратная связь</h2>
+        <p class="form__text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму
+          ниже:</p>
+        <form class="form-input" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="form-input" placeholder="Ваше имя" type="text" required name="name">
+
+          <input class="form-input" placeholder="Email для обратной связи" type="email"
+            pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required name="e-mail">
+
+          <textarea class="text-area" name="question" cols="30" rows="10" minlength="3" required
+            placeholder="Опишите Ваш вопрос."></textarea>
+          <button class="button btn-f" type="submit">Задать нам вопрос</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
     <div class="container footer-pages">
       <a href="logo-link"><img src="img/logo-of-page.svg" alt="logo"> </a>
       <ul class="navbar__list footer-page">
@@ -151,22 +209,22 @@
         <li class="navbar__item"><a class="navbar__link" href="#">Контакты</a></li>
       </ul>
 
-      <div class="info-page footer-page">
-        <div class="work-day">
+      <div class="info-page footer-call">
+        <div class="work-day footer-phone">
           <p class="work-day__item"><b>Пн - Пт</b> 8:00 - 18:00</p>
           <p class="work-day__item"><b>Сб - Вс</b> 8:00 - 14:00</p>
         </div>
 
         <address class="address-veterinary">г. Мариуполь, проспект Победы, 48а</address>
 
-        <ul class="phone-list">
+        <ul class="phone-list footer-phone">
           <li class="phone__item"><a class="phone__link" href="tel:+0676347574">(067) 634 -75 - 74</a></li>
           <li class="phone__item"><a class="phone__link" href="tel:+0637570131">(0637) 57 - 01 - 31</a></li>
           <li class="phone__item"><a class="phone__link" href="tel:+0982664389">(098) 266 - 43 - 89</a></li>
         </ul>
 
       </div>
-      </div>
+    </div>
   </footer>
 
 </body>
