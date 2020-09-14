@@ -957,3 +957,72 @@ body {
     width: 200px;
 
 }
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+    .s1::before {
+        background-image: url("../img/doctor\ 1@2x.png");
+    }
+    
+    .s2::before {
+        background-image: url("../img/doctor\ 2@2x.png");
+    }
+    
+    .s3::before {
+        background-image: url("../img/hirurg@2x.png");
+    }
+    
+    .s4::before {
+        background-image: url("../img/dermatolog@2x.png");
+    }
+    
+    .s5::before {
+        background-image: url("../img/veterinary-3\ 1@2x.png");
+    }
+    
+    .s6::before {
+        background-image: url("../img/oftamtalog@2x.png");
+    }
+    
+    .s7::before {
+        background-image: url("../img/diagnos@2x.png");
+    }
+    
+    .s8::before {
+        background-image: url("../img/shpirist@2x.png");
+    }
+    
+    .s9::before {
+        background-image: url("../img/pasport@2x.png");
+    }
+    
+    .s10::before {
+        background-image: url("../img/vaksina@2x.png");
+    }
+    
+    .s11::before {
+        background-image: url("../img/stamatalog@2x.png");
+    }
+    
+    .s12::before {
+        background-image: url("../img/case@2x.png");
+    }
+
+   body{ background-image: url("../img/hero-bgi@2x.png");}
+   .article1::before{
+    background-image: url("../img/article1@2x.png");
+   }
+   .article2::before{
+    background-image: url("../img/article2@2x.png");
+   }
+   .article3::before{
+    background-image: url("../img/article3@2x.png");
+   }
+}
