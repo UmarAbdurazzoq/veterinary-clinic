@@ -422,7 +422,7 @@ body {
     display: inline-block;
     width: 84px;
     height: 56px;
-    background-image: url("../img/“.svg");
+    background-image: url("../img/quote.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -437,7 +437,7 @@ body {
     display: inline-block;
     width: 84px;
     height: 56px;
-    background-image: url("../img/“.svg");
+    background-image: url("../img/quote.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -845,12 +845,12 @@ body {
 }
 .article2::before{
     position: absolute;
-    display: inline-block;
+    display: block;
     left: 0;
-    top: 0;
+    top: 0px;
     bottom: 0;
     width: 305px;
-    height: 465px;
+    height: 100%;
     background-image: url("../img/article2.png");
     background-position: center center;
     background-repeat: no-repeat;
